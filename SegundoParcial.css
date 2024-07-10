@@ -1,0 +1,206 @@
+/*Para la seccion de historia, que lleva una imagen al lado*/
+
+.contenedorHistoria {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  box-sizing: border-box;
+}
+.contenedorHistoria .texto {
+  max-width: 45%;
+  margin-left: 4%;
+  transition: background-color 0.3s;
+}
+
+.contenedorHistoria video {
+  max-width: 45%;
+  margin-left: 4%;
+}
+
+/*Se usa para imagenes incluso fuera de la seccion de historia, no queria crear otro flex*/
+.contenedorHistoria img {
+  max-width: 50%;
+  margin-left: 4%;
+}
+
+/*Para modificar la seccion caracteristicas*/
+.caracteristicas {
+  display: flexbox;
+  text-align: center;
+  list-style-position: inside;
+  transition: background-color 0.3s;
+}
+
+/*Para cuando cruce el cursor por el texto, el fondo cambie de color*/
+.caracteristicas:hover,
+.jugabilidad:hover,
+.descripcion:hover,
+.expectativas:hover,
+.summary:hover,
+.contenedorHistoria .texto:hover {
+  background-color: rgb(202, 35, 69);
+  border-radius: 5px;
+}
+
+/*Para crear la transicion de colores en los textos simples*/
+.jugabilidad,
+.descripcion,
+.expectativas {
+  transition: background-color 0.3s;
+}
+
+/*Para cambiar la seccion principal*/
+.summary {
+  display: flexbox;
+  text-align: center;
+  list-style-position: inside;
+  transition: background-color 0.3s;
+}
+.listaCentral {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+/*Para cambiar la seccion noticias*/
+
+.noticias h2,
+.noticias p {
+  text-align: center;
+}
+.pagina-noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 8%;
+}
+.pagina-noticias iframe {
+  width: 80%;
+  height: 500px;
+}
+
+/*Para modificar el carrusel*/
+
+.carousel-item img {
+  max-height: 500px;
+  max-width: 2000px;
+  object-fit: contain;
+}
+/*
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}*/
+
+/*Para hacer un cambio de la fuente del body*/
+body {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  margin: 0;
+}
+
+body span{
+  color: rgb(0, 255, 170);
+}
+body span:hover{
+  cursor: pointer;
+}
+
+.tituloPrincipal {
+  background-color: rgba(220, 20, 60, 0.829);
+  text-align: center;
+  padding: 2px;
+  border-radius: 5px;
+}
+img[alt="Silksong_3"] {
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+/*Para hacer un cambio del background del body*/
+.seccion-1 {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+.seccion-2 {
+  background-color: rgb(201, 19, 55);
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.seccion-2 img[alt="logoTC"] {
+  max-width: 11%;
+}
+
+.seccion-2 img[alt="logo-header-unphu"] {
+  max-width: 30%;
+}
+
+.seccion-2-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  color: white;
+}
+
+.seccion-medio {
+  background-color: rgb(235, 222, 227);
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+
+/*Para darle estilo a la barra de navegacion*/
+.navbar {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr 1fr;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+}
+.nav-list,
+.seccion-2-grid li {
+  list-style-type: none;
+}
+.nav-list a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5%;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.nav-list a:hover {
+  background-color: rgba(156, 10, 35, 0.727);
+}
+.listaIzquierda {
+  list-style-type: none;
+  text-align: right;
+  justify-content: end;
+}
+
+/*Para modificar los iconos de redes sociales*/
+.redes a{
+  color: white;
+  font-size: 150%;
+  text-decoration: none;
+  background-color: #000000;
+}
+
+.botonSubir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.botonSubir:hover {
+  background-color: goldenrod;
+}
