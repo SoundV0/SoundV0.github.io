@@ -1,27 +1,34 @@
 /*Para la seccion de historia, que lleva una imagen al lado*/
 
 .contenedorHistoria {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr 1fr;
+
   justify-content: space-between;
-  padding: 2%;
-  box-sizing: border-box;
 }
 .contenedorHistoria .texto {
-  max-width: 45%;
-  margin-left: 4%;
+  max-width: 100%;
+  margin-left: 10%;
   transition: background-color 0.3s;
 }
 
 .contenedorHistoria video {
-  max-width: 45%;
+  max-width: 80%;
   margin-left: 4%;
 }
 
 /*Se usa para imagenes incluso fuera de la seccion de historia, no queria crear otro flex*/
 .contenedorHistoria img {
-  max-width: 50%;
-  margin-left: 4%;
+  max-width: 90%;
+  height: auto;
+  margin-left: 15%;
+}
+@media (max-width: 600px) {
+  .contenedorHistoria {
+    
+    grid-template-columns: 1fr; 
+  }
 }
 
 /*Para modificar la seccion caracteristicas*/
@@ -75,8 +82,14 @@
 }
 .pagina-noticias iframe {
   width: 80%;
-  height: 500px;
+  height: 300px;
 }
+@media (max-width: 600px) {
+  .pagina-noticias {
+    grid-template-columns: 1fr; 
+  }
+}
+
 
 /*Para modificar el carrusel*/
 
@@ -116,6 +129,7 @@ body span:hover{
 img[alt="Silksong_3"] {
   max-width: 80%;
   margin-left: 10%;
+  height: auto;
 }
 
 /*Para hacer un cambio del background del body*/
