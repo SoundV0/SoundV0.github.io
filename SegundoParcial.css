@@ -26,8 +26,7 @@
 }
 @media (max-width: 600px) {
   .contenedorHistoria {
-    
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
 
@@ -86,10 +85,9 @@
 }
 @media (max-width: 600px) {
   .pagina-noticias {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
-
 
 /*Para modificar el carrusel*/
 
@@ -113,10 +111,10 @@ body {
   margin: 0;
 }
 
-body span{
+body span {
   color: rgb(0, 255, 170);
 }
-body span:hover{
+body span:hover {
   cursor: pointer;
 }
 
@@ -198,7 +196,7 @@ img[alt="Silksong_3"] {
 }
 
 /*Para modificar los iconos de redes sociales*/
-.redes a{
+.redes a {
   color: white;
   font-size: 150%;
   text-decoration: none;
